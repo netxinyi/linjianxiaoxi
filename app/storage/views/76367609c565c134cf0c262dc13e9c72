@@ -1,7 +1,0 @@
-<?php
-	$presenter = new Illuminate\Pagination\BootstrapPresenter($paginator);
-?>
-
-<ul class="pagination pagination-sm">
-    <?php echo $presenter->render(); ?>
-</ul>
