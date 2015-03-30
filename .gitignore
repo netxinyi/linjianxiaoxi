@@ -1,0 +1,9 @@
+text eol=lf
+composer.json
+composer.lock
+.*
+app/config/local/
+app/storage/
+public/static/
+public/resource/upload/
+
