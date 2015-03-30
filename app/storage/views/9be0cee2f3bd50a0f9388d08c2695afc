@@ -1,0 +1,30 @@
+
+<?php $__env->startSection('title'); ?> Simple - Blog @parent <?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('beforeStyle'); ?>
+    <?php echo style('bootstrap-3.0.3'); ?>
+@parent <?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('style'); ?>
+body
+{
+    padding-bottom: 0;
+    background-color: #f3f3ff;
+}
+@parent <?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('body'); ?>
+
+    <?php echo $__env->make('w.blogNavbar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+    <div class="container" style="margin-top:5em; padding-bottom:1em;">
+        <?php echo $__env->yieldContent('container'); ?>
+    </div>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('end'); ?>
+    <?php echo script('jquery-1.10.2', 'bootstrap-3.0.3'); ?>
+@parent <?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('l.base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
