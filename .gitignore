@@ -5,7 +5,6 @@ composer.lock
 app/config/local/
 app/config/ideapad/
 app/storage/
-public/static/
 public/resource/upload/
 other/
 

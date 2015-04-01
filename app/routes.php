@@ -122,13 +122,26 @@ RouteGroup::make('account')->as('account')->before('auth')->controller('AccountC
 
 /*
 |--------------------------------------------------------------------------
+| 前台
+|--------------------------------------------------------------------------
+*/
+Route::get('/',function(){
+    return View::make('slidefolio');
+});
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
 | 博客
 |--------------------------------------------------------------------------
 */
 RouteGroup::make()->controller('BlogController')->go(function ($route) {
 
     # 博客首页
-    $route->get( '/'            )->as('home'            )->uses('getIndex'           );
+    //$route->get( '/'            )->as('home'            )->uses('getIndex'           );
     # 分类文章列表
     $route->get( 'category/{id}')->as('categoryArticles')->uses('getCategoryArticles');
     # 展示博客文章
