@@ -1,10 +1,11 @@
 define(function(require, exports, module){
     var $ = require('jquery');
     require('jqVegas');
-    require('jqValidate');
-    require('jqMixitup');
-    require('jqScrollToFixed');
     require('bootstrap');
+    require('jqScrollToFixed');
+    require('jqMixitup');
+    require('jqValidate');
+    require("jqForm");
 
 
     $.vegas('slideshow', {
@@ -80,7 +81,15 @@ define(function(require, exports, module){
             $(element).closest('.form-group').removeClass('success').addClass('error');
         },
         success: function(element) {
-            $(element).text('正确').addClass('valid').closest('.form-group').removeClass('error').addClass('success');
-        }
+            $(element).remove();
+        },
+        submitHandler:function(form){
+            $(form).ajaxSubmit({
+                success:function(){
+                    alert('提交成功！我们会尽快与您联系！');
+                }
+            });
+        },
+        debug:false
     });
 });
