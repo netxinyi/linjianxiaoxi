@@ -28,7 +28,7 @@
             <li><i class="fa fa-pinterest fa-3x"></i></li>
         </ul>
         <br>
-        <a href="#about" class="btn btn-top">更多</a>
+        <a href="#about" class="btn btn-top">查看更多</a>
     </div>
 </div>
 
@@ -44,12 +44,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">Slidefolio</a>
+                <a href="#" class="navbar-brand">LinJianXiaoXi</a>
             </div>
             <div class="collapse navbar-collapse" id="mobilemenu">
                 <ul class="nav navbar-nav navbar-right text-center">
                     <li><a href="#top"><i class="service-icon fa fa-home"></i>&nbsp;首页</a></li>
-                    <li><a href="#about"><i class="service-icon fa fa-info"></i>&nbsp;关于</a></li>
+                    <li><a href="#about"><i class="service-icon fa fa-info"></i>&nbsp;关于我们</a></li>
                     <li><a href="#services"><i class="service-icon fa fa-laptop"></i>&nbsp;服务</a></li>
                     <li><a href="#portfolio"><i class="service-icon fa fa-camera"></i>&nbsp;鹦鹉展示</a></li>
                     <li><a href="#contact"><i class="service-icon fa fa-envelope"></i>&nbsp;联系我们</a></li>
@@ -64,11 +64,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
-                <h2>About Us</h2>
+                <h2>关于我们</h2>
 
-                <p class="lead">Lorem ipsum dolor sit amet, ei essent delenit sit, adipisci salutatus has eu. Quis
-                    tamquam cu nam. Sed esse deleniti et, ex rebum quaestio his. Audiam deseruisse sed cu, vix ex possim
-                    causae omittantur.</p>
+                <p class="lead">邢台《林间小溪鹦鹉养殖场》是一家专业从事大头鹦鹉养殖，繁育，优化，提纯，培育精品为目的的，庭院试养殖场。
+                可以为玩家定向培育高端品种，也可为养殖户提供优质种鸟，愿与商家打成长期合作伙伴，我场主要品种有，黄绿系原始，蛋白石，各种灰翅，黄脸，金脸，鱼鳞，珍珠，派特，彩虹，黄白黑眼，黄白红眼，等等……。
+                以批发为主，量大优惠，可发往全国各地，快递，客运即可，并能为养殖户，提供养殖技术。
+                定做组合试多功能繁殖笼，欢迎新老客户来场参观，购鸟，引种。
+                 </p>
             </div>
         </div>
     </div>
@@ -79,7 +81,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
-                <h2>Our Services</h2>
+                <h2>我们的服务</h2>
                 <hr>
             </div>
         </div>
@@ -88,30 +90,29 @@
                 <div class="service-item">
                     <i class="service-icon fa fa-camera-retro fa-3x"></i>
 
-                    <h3>Portrait</h3>
+                    <h3>技术咨询</h3>
 
-                    <p>Ad has dicat ridens consetetur, eos eu option persius. Mollis cotidieque conclusionemque per id,
-                        ne nam alienum liberavisse. </p>
+                    <p>多年的养殖经验，为您提供养殖技术、繁育问题、疾病预防、品种优化等技术咨询服务</p>
                 </div>
             </div>
             <div class="col-md-4 text-center">
                 <div class="service-item">
                     <i class="service-icon fa fa-camera fa-3x"></i>
 
-                    <h3>Black & white</h3>
+                    <h3>网上商城</h3>
 
-                    <p>In mea similique vulputate, ea cum amet malorum dissentiunt. Qui deleniti aliquando cu, ullum
-                        soluta his an, id inani salutatus sit.</p>
+                    <p>我们的在线商城即将上线，为您推荐优质品种。可在线选购您心仪的爱鸟。</p>
+                    <p></p>
                 </div>
             </div>
             <div class="col-md-4 text-center">
                 <div class="service-item">
                     <i class="service-icon fa fa-globe fa-3x"></i>
 
-                    <h3>Web Design</h3>
+                    <h3>安全送达</h3>
 
-                    <p>Ad has dicat ridens consetetur, eos eu option persius. Mollis cotidieque conclusionemque per id,
-                        ne nam alienum liberavisse.</p>
+                    <p>我们可提供快递、物流、专车等送货方式。
+                    我们保证将爱鸟及时、安全的送到您的手中。</p>
                 </div>
             </div>
         </div>
@@ -123,13 +124,13 @@
     <div class="container">
         <div class="row push50">
             <div class="col-md-4 col-md-offset-4 text-center">
-                <h2>Our Work</h2>
+                <h2>鹦鹉展示</h2>
 
                 <h3>
-                    <span class="filter label label-default" data-filter="all">ALL</span>
-                    <span class="filter label label-default" data-filter="bw">B&amp;W</span>
-                    <span class="filter label label-default" data-filter="nature">Nature</span>
-                    <span class="filter label label-default" data-filter="portraits">Portraits</span>
+                    <span class="filter label label-default" data-filter="all">全部</span>
+                    <span class="filter label label-default" data-filter="yl">鱼鳞</span>
+                    <span class="filter label label-default" data-filter="zz">珍珠</span>
+                    <span class="filter label label-default" data-filter="hc">灰翅</span>
                 </h3>
                 <hr>
             </div>
@@ -137,195 +138,70 @@
         <div class="row">
             <div class="gallery">
                 <ul id="Grid" class="gcontainer">
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix bw portraits" data-cat="graphics">
-                        <a data-toggle="modal" data-target="#portrait1" class="mix-cover">
-                            <img class="horizontal" src="/static/img/banner/portrait1-sm.jpg" alt="placeholder">
+                    <li class="col-md-4 col-sm-4 col-xs-12 mix yl" data-cat="yl">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/yl1.jpg" alt="placeholder">
+                            <span class="overlay"><span class="valign"></span>
+                            <span class="title">鱼鳞1号</span></span>
+                        </a>
+                    </li>
+                     <li class="col-md-4 col-sm-4 col-xs-12 mix hc all" data-cat="hc">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/hc2.jpg" alt="placeholder">
                             <span class="overlay"><span class="valign"></span><span
-                                    class="title">Portrait 1</span></span>
+                                    class="title">灰翅2号</span></span>
                         </a>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix portraits" data-cat="graphics">
-                        <a data-toggle="modal" data-target="#portrait2" class="mix-cover">
-                            <img class="horizontal" src="/static/img/banner/portrait2.jpg" alt="placeholder">
+                    <li class="col-md-4 col-sm-4 col-xs-12 mix yl all" data-cat="yl">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/yl3.jpg" alt="placeholder">
                             <span class="overlay"><span class="valign"></span><span
-                                    class="title">Portrait 2</span></span>
+                                    class="title">鱼鳞3号</span></span>
                         </a>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix nature" data-cat="nature">
-                        <a data-toggle="modal" data-target="#nature1" class="mix-cover">
-                            <img class="horizontal" src="/static/img/banner/nature1.jpg" alt="placeholder">
-                            <span class="overlay"><span class="valign"></span><span class="title">Nature 1</span></span>
-                        </a>
-                    </li>
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix portraits" data-cat="portraits">
-                        <a data-toggle="modal" data-target="#portrait3" class="mix-cover">
-                            <img class="horizontal" src="/static/img/banner/portrait3.jpg" alt="placeholder">
+                    <li class="col-md-4 col-sm-4 col-xs-12 mix bw zz" data-cat="zz">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/zz2.jpg" alt="placeholder">
                             <span class="overlay"><span class="valign"></span><span
-                                    class="title">Portrait 3</span></span>
+                                    class="title">珍珠2号</span></span>
                         </a>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix portraits" data-cat="portraits">
-                        <a data-toggle="modal" data-target="#portrait5" class="mix-cover">
-                            <img class="horizontal" src="/static/img/banner/portrait5.jpg" alt="placeholder">
+                     <li class="col-md-4 col-sm-4 col-xs-12 mix hc" data-cat="hc">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/hc1.jpg" alt="placeholder">
                             <span class="overlay"><span class="valign"></span><span
-                                    class="title">Portrait 5</span></span>
+                                    class="title">灰翅1号</span></span>
                         </a>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix nature" data-cat="nature">
-                        <a data-toggle="modal" data-target="#nature" class="mix-cover">
-                            <img class="horizontal" src="/static/img/banner/nature.jpg" alt="placeholder">
-                            <span class="overlay"><span class="valign"></span><span class="title">Nature</span></span>
-                        </a>
-                    </li>
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix portraits" data-cat="portrait">
-                        <a data-toggle="modal" data-target="#portrait4" class="mix-cover green">
-                            <img class="vertical" src="/static/img/banner/portrait4.jpg" alt="portrait 4">
+                    <li class="col-md-4 col-sm-4 col-xs-12 mix zz" data-cat="zz">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/zz1.jpg" alt="placeholder">
                             <span class="overlay"><span class="valign"></span><span
-                                    class="title">Portrait 4</span></span>
+                                    class="title">珍珠1号</span></span>
                         </a>
                     </li>
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix bw nature all" data-cat="portrait">
-                        <a data-toggle="modal" data-target="#forest" class="mix-cover green">
-                            <img class="vertical" src="/static/img/banner/forest.jpg" alt="Forest">
-                            <span class="overlay"><span class="valign"></span><span class="title">Forest</span></span>
-                        </a>
-                    </li>
-                    <li class="col-md-4 col-sm-4 col-xs-12 mix bw nature all" data-cat="bw">
-                        <a data-toggle="modal" data-target="#bw1" class="mix-cover green">
-                            <img class="vertical" src="/static/img/banner/bw1.jpg" alt="Black and White">
+                    <li class="col-md-4 col-sm-4 col-xs-12 mix yl" data-cat="yl">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/yl2.jpg" alt="placeholder">
                             <span class="overlay"><span class="valign"></span><span
-                                    class="title">Black &amp; White</span></span>
+                                    class="title">鱼鳞2号</span></span>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-sm-4 col-xs-12 mix hc" data-cat="hc">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/hc3.jpg" alt="placeholder">
+                            <span class="overlay"><span class="valign"></span><span
+                                    class="title">灰翅3号</span></span>
+                        </a>
+                    </li>
+                     <li class="col-md-4 col-sm-4 col-xs-12 mix zz all" data-cat="zz">
+                        <a data-toggle="modal" href="#" class="mix-cover green">
+                            <img class="horizontal" src="/static/img/grid/zz3.jpg" alt="placeholder">
+                            <span class="overlay"><span class="valign"></span><span
+                                    class="title">珍珠3号</span></span>
                         </a>
                     </li>
                 </ul>
-
-                <div class="modal fade" id="portrait1" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Portrait 1</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="Portrait1" src="/static/img/banner/portrait1.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="portrait2" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Portrait 2</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="Portrait1" src="/static/img/banner/portrait2.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="portrait3" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Portrait 3</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="Portrait1" src="/static/img/banner/portrait3.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="portrait4" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Portrait 4</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="Portrait1" src="/static/img/banner/portrait4.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="portrait5" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Portrait 5</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="Portrait1" src="/static/img/banner/portrait5.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="nature" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Nature</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="nature" src="/static/img/banner/nature.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="nature1" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Nature 1</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="nature" src="/static/img/banner/nature1.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="forest" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Forest</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="forest" src="img/banner/forest.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="bw1" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                <h4 class="modal-title text-center">Black and White</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img class="thumbnail" alt="forest" src="/static/img/banner/bw1.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -336,47 +212,47 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
-                <h2>Contact Us</h2>
+                <h2>联系我们</h2>
                 <hr>
             </div>
             <div class="col-md-5 col-md-offset-3">
 
-                <form action="contact" id="contact-form" class="form-horizontal">
+                <form action="/doMessage" id="contact-form" class="form-horizontal">
                     <fieldset>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="name">Your Name</label>
+                            <label class="col-sm-4 control-label" for="name">姓名：</label>
 
                             <div class="col-sm-8">
-                                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                                <input type="text" placeholder="输入您的姓名或称呼" class="form-control" name="name" id="name">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="email">Email Address</label>
+                            <label class="col-sm-4 control-label" for="email">邮箱：</label>
 
                             <div class="col-sm-8">
-                                <input type="text" placeholder="Enter Your Email Address" class="form-control"
+                                <input type="text" placeholder="输入您的邮箱地址" class="form-control"
                                        name="email" id="email">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="subject">Subject</label>
+                            <label class="col-sm-4 control-label" for="qq">Q&nbsp;Q：</label>
 
                             <div class="col-sm-8">
-                                <input type="text" placeholder="Subject" class="form-control" name="subject"
-                                       id="subject">
+                                <input type="text" placeholder="您的QQ号码" class="form-control" name="qq"
+                                       id="qq">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="message">Your Message</label>
+                            <label class="col-sm-4 control-label" for="message">留言：</label>
 
                             <div class="col-sm-8">
-                                <textarea placeholder="Please Type Your Message" class="form-control" name="message"
+                                <textarea placeholder="请输入您的留言" class="form-control" name="message"
                                           id="message" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="col-sm-offset-4 col-sm-8">
-                            <button type="submit" class="btn btn-success">Submit</button>
-                            <button type="reset" class="btn btn-primary">Cancel</button>
+                            <button type="submit" class="btn btn-success">提交</button>
+                            <button type="reset" class="btn btn-primary">重写</button>
                         </div>
                     </fieldset>
                 </form>
@@ -391,8 +267,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
-                <h2>Thank You</h2>
-                <em>Copyright &copy; Company 2013</em>
+                <span>Copyright &copy; 2009-2015 林间小溪鹦鹉养殖场. Powered by 新依网络</span>
             </div>
         </div>
     </div>
