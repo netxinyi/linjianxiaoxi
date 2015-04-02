@@ -9,8 +9,10 @@
     <meta name="description" content="林间小溪鹦鹉养殖场">
     <meta name="author" content="新依网络">
 
-    <link href="/static/lib/bootstrap/css/bootstrap-3.0.0.css" rel="stylesheet">
+
     <link href="/static/themes/slidefolio/slidefolio.css" rel="stylesheet">
+    <link href="/static/lib/bootstrap/css/bootstrap-3.0.0.css" rel="stylesheet">
+
     <link href="/static/lib/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
