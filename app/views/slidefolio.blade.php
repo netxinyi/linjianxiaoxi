@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">LinJianXiaoXi</a>
+                <a href="#" class="navbar-brand">林间小溪</a>
             </div>
             <div class="collapse navbar-collapse" id="mobilemenu">
                 <ul class="nav navbar-nav navbar-right text-center">
@@ -225,14 +225,14 @@
                             <label class="col-sm-4 control-label" for="name">姓名：</label>
 
                             <div class="col-sm-8">
-                                <input type="text" placeholder="输入您的姓名或称呼" class="form-control" name="name" id="name">
+                                <input type="text" placeholder="姓名或称呼" class="form-control" name="name" id="name">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label" for="email">邮箱：</label>
 
                             <div class="col-sm-8">
-                                <input type="text" placeholder="输入您的邮箱地址" class="form-control"
+                                <input type="text" placeholder="邮箱地址" class="form-control"
                                        name="email" id="email">
                             </div>
                         </div>
@@ -240,7 +240,7 @@
                             <label class="col-sm-4 control-label" for="qq">Q&nbsp;Q：</label>
 
                             <div class="col-sm-8">
-                                <input type="text" placeholder="您的QQ号码" class="form-control" name="qq"
+                                <input type="text" placeholder="QQ号码" class="form-control" name="qq"
                                        id="qq">
                             </div>
                         </div>
@@ -248,7 +248,7 @@
                             <label class="col-sm-4 control-label" for="message">留言：</label>
 
                             <div class="col-sm-8">
-                                <textarea placeholder="请输入您的留言" class="form-control" name="message"
+                                <textarea placeholder="留言内容" class="form-control" name="message"
                                           id="message" rows="3"></textarea>
                             </div>
                         </div>
