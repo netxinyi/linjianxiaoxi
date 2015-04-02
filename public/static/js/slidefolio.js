@@ -80,7 +80,7 @@ define(function(require, exports, module){
             $(element).closest('.form-group').removeClass('success').addClass('error');
         },
         success: function(element) {
-            element.text('OK!').addClass('valid').closest('.form-group').removeClass('error').addClass('success');
+            $(element).text('正确').addClass('valid').closest('.form-group').removeClass('error').addClass('success');
         }
     });
 });

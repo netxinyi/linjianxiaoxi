@@ -219,7 +219,7 @@
             </div>
             <div class="col-md-5 col-md-offset-3">
 
-                <form action="/doMessage" id="contact-form" class="form-horizontal">
+                <form action="/doMessage" id="contact-form" class="form-horizontal" method="post">
                     <fieldset>
                         <div class="form-group">
                             <label class="col-sm-4 control-label" for="name">姓名：</label>
