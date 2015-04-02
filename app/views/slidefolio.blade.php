@@ -277,7 +277,7 @@
 <script src="/static/lib/seajs/sea-3.0.0.js"></script>
 <script src="/static/lib/seajs/sea-config.js"></script>
 <script type="text/javascript">
-    seajs.use('slidefolio');
+    //seajs.use('slidefolio');
 </script>
 
 </body>

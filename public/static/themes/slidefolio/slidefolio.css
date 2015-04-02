@@ -323,3 +323,12 @@ footer {
 /* responsive */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) { .navbar-brand {margin-left:20px;} .navbar-toggle {margin-right:25px;} #Grid .mix{margin-left:-25px;}}
+
+
+.header{
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    background-image: url(/static/img/slideshow/overlay.png);
+}
