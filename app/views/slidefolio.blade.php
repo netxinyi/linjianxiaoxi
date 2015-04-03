@@ -22,13 +22,10 @@
         <img class="img-rounded" alt="林间小溪鹦鹉养殖场Logo" src="/static/img/slideshow/logo.jpg"/>
 
         <h2>林间小溪-精品繁育基地</h2>
-        <ul class="list-inline">
-            <li><i class="fa fa-facebook fa-3x"></i></li>
-            <li><i class="fa fa-twitter fa-3x"></i></li>
-            <li><i class="fa fa-google-plus fa-3x"></i></li>
-            <li><i class="fa fa-linkedin fa-3x"></i></li>
-            <li><i class="fa fa-pinterest fa-3x"></i></li>
-        </ul>
+        <span>联系电话：15194934913</span>
+        <br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;Q&nbsp;&nbsp;Q：1662393359</span>
+        <br>
         <br>
         <a href="#about" class="btn btn-top">查看更多</a>
     </div>
