@@ -215,8 +215,8 @@
                 <hr>
             </div>
             <div class="col-md-5 col-md-offset-3">
+                {{ Form::open(['route' => 'doMessage','id'=>'contact-form','class'=>'form-horizontal','method'=>'post']) }}
 
-                <form action="/doMessage" id="contact-form" class="form-horizontal" method="post">
                     <fieldset>
                         <div class="form-group">
                             <label class="col-sm-4 control-label" for="name">姓名：</label>
@@ -254,7 +254,7 @@
                             <button type="reset" class="btn btn-primary">重写</button>
                         </div>
                     </fieldset>
-                </form>
+               {{Form::close()}}
 
             </div>
         </div>

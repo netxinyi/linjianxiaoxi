@@ -85,8 +85,13 @@ define(function(require, exports, module){
         },
         submitHandler:function(form){
             $(form).ajaxSubmit({
-                success:function(){
-                    alert('提交成功！我们会尽快与您联系！');
+                success:function(ret){
+                    if(ret.code == 1000){
+                        alert('提交成功！我们会尽快与您联系！');
+                    }else{
+                        alert(ret.msg);
+                    }
+
                 }
             });
         },

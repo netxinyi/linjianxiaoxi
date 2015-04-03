@@ -129,6 +129,7 @@ Route::get('/',function(){
     return View::make('slidefolio');
 });
 
+Route::post('/doMessage',array('as'=>'doMessage','befor'=>'csrf','uses'=>'IndexController@doMessage'));
 
 
 
