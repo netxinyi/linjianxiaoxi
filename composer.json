@@ -10,7 +10,8 @@
 		"intervention/image": "2.*",
 		"yzalis/identicon": "1.*",
 		"michelf/php-markdown": "1.4.0",
-		"nickcernis/html-to-markdown": "dev-master"
+		"nickcernis/html-to-markdown": "dev-master",
+	 	 "guzzlehttp/guzzle": "~4.0"
 	},
 	"require-dev": {
 		"barryvdh/laravel-debugbar": "1.*",

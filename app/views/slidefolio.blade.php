@@ -242,11 +242,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="message">留言：</label>
+                            <label class="col-sm-4 control-label" for="content">留言：</label>
 
                             <div class="col-sm-8">
-                                <textarea placeholder="留言内容" class="form-control" name="message"
-                                          id="message" rows="3"></textarea>
+                                <textarea placeholder="留言内容" class="form-control" name="content"
+                                          id="content" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="col-sm-offset-4 col-sm-8">

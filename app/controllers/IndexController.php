@@ -30,6 +30,12 @@ class IndexController extends BaseController
         if ($validator->passes()) {
             // 验证成功
            //TODO 放入邮件队列
+            Mail::queue(Config::get('site.frontEmailAdminView'), $data, function($message) use($data)
+            {
+                $message->to(Config::get('site.frontEmail'))
+                    ->subject('您收到【'.$data['name'].'】来自网站的咨询');
+            });
+
             // 返回成功信息
             return Response::json(['msg'=>'ok','code'=>1000]);
         } else {
