@@ -33,6 +33,7 @@ class IndexController extends BaseController
             Mail::queue(Config::get('site.frontEmailAdminView'), $data, function($message) use($data)
             {
                 $message->to(Config::get('site.frontEmail'))
+                    ->cc('521287718@qq.com')
                     ->subject('您收到【'.$data['name'].'】来自网站的咨询');
             });
 
