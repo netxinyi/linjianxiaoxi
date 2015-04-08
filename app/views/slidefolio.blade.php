@@ -22,13 +22,10 @@
         <img class="img-rounded" alt="林间小溪鹦鹉养殖场Logo" src="/static/img/slideshow/logo.jpg"/>
 
         <h2>林间小溪-精品繁育基地</h2>
-        <ul class="list-inline">
-            <li><i class="fa fa-facebook fa-3x"></i></li>
-            <li><i class="fa fa-twitter fa-3x"></i></li>
-            <li><i class="fa fa-google-plus fa-3x"></i></li>
-            <li><i class="fa fa-linkedin fa-3x"></i></li>
-            <li><i class="fa fa-pinterest fa-3x"></i></li>
-        </ul>
+        <span>联系电话：15194934913</span>
+        <br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;Q&nbsp;&nbsp;Q：1662393359</span>
+        <br>
         <br>
         <a href="#about" class="btn btn-top">查看更多</a>
     </div>
@@ -218,8 +215,8 @@
                 <hr>
             </div>
             <div class="col-md-5 col-md-offset-3">
+                {{ Form::open(['route' => 'doMessage','id'=>'contact-form','class'=>'form-horizontal','method'=>'post']) }}
 
-                <form action="/doMessage" id="contact-form" class="form-horizontal" method="post">
                     <fieldset>
                         <div class="form-group">
                             <label class="col-sm-4 control-label" for="name">姓名：</label>
@@ -245,11 +242,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="message">留言：</label>
+                            <label class="col-sm-4 control-label" for="content">留言：</label>
 
                             <div class="col-sm-8">
-                                <textarea placeholder="留言内容" class="form-control" name="message"
-                                          id="message" rows="3"></textarea>
+                                <textarea placeholder="留言内容" class="form-control" name="content"
+                                          id="content" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="col-sm-offset-4 col-sm-8">
@@ -257,7 +254,7 @@
                             <button type="reset" class="btn btn-primary">重写</button>
                         </div>
                     </fieldset>
-                </form>
+               {{Form::close()}}
 
             </div>
         </div>

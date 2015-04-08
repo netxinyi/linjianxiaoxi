@@ -53,7 +53,7 @@ define(function(require, exports, module){
                 maxlength:11,
                 required: true
             },
-            message: {
+            content: {
                 minlength: 10,
                 required: true
             }
@@ -72,7 +72,7 @@ define(function(require, exports, module){
                 minlength:"QQ号最少为5位数",
                 maxlength:"QQ号最大为11位"
             },
-            message:{
+            content:{
                 required:"请填写留言内容",
                 minlength:"留言内容最少填写10个字"
             }
@@ -85,8 +85,13 @@ define(function(require, exports, module){
         },
         submitHandler:function(form){
             $(form).ajaxSubmit({
-                success:function(){
-                    alert('提交成功！我们会尽快与您联系！');
+                success:function(ret){
+                    if(ret.code == 1000){
+                        alert('提交成功！我们会尽快与您联系！');
+                    }else{
+                        alert(ret.msg);
+                    }
+
                 }
             });
         },

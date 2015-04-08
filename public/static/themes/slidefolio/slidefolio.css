@@ -117,7 +117,7 @@ html,body{height:100%;width:100%;}
 
 .about_us {
     padding: 50px 0;
-    background:none repeat scroll 0 0 #F1F1F1;
+    background:none repeat scroll 0 0 #FFFFFF;
     border-bottom:1px solid #D1D1D1 !important;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
     *zoom: 1;
@@ -179,7 +179,7 @@ label.error {
     margin-top: 2px;
 }
 .portfolio {
-    background:#f1f1f1;
+    background:#FFFFFF;
 }
 /* gallery */
 .gallery {
@@ -322,7 +322,7 @@ span.valign {
 
 footer {
     padding: 20px 0;
-    background:#f1f1f1;
+    background:#FFFFFF;
 }
 
 /* responsive */

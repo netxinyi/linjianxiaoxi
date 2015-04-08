@@ -11,3 +11,4 @@
 |
 */
 
+\Illuminate\Support\Facades\Artisan::add(new SendEmailCommand());
