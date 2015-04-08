@@ -24,6 +24,12 @@
                                 <li><a href="{{route('varietie.create')}}">添加品种</a></li>
                             </ul>
                         </li>
+                        <li class="accordion">
+                            <a href="#"><i class="glyphicon glyphicon-plus"></i><span>工具</span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="{{route('tools.payLink')}}">支付链接</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>

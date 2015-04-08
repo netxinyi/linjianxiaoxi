@@ -96,6 +96,13 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth|admin'), function () {
         $route->delete('{id}')->as('destroy')->uses('destroy');
     });
 
+    #工具
+    RouteGroup::make('tools')->as('tools')->controller('Admin_ToolsController')->go(function ($route) {
+        $route->index();
+        $route->get('payLink')->as('payLink')->uses('showPayLink');
+        $route->post('payLink')->as('doPayLink')->uses('doPayLink')->befor('csrf');
+    });
+
 });
 
 
@@ -156,4 +163,7 @@ RouteGroup::make()->controller('BlogController')->go(function ($route) {
 | 特殊功能
 |--------------------------------------------------------------------------
 */
+Route::group(array('prefix' => 'tools'), function () {
 
+
+});
