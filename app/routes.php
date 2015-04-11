@@ -49,6 +49,7 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth|admin'), function () {
               ->edit(  )
               ->update();
         $route->get('gallery')->as('gallery')->uses('galleryIndex');
+        $route->post('uploadImg')->as('uploadImg')->uses('uploadImg');
 
 
         $route->delete('{id}')->as('destroy')->uses('destroy');

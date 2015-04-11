@@ -85,7 +85,9 @@
                             <br>
                         </div>
                         <div class="tab-pane" id="product-gallery">
-                            dd
+                         <input data-no-uniform="true" type="file" name="multipleUpload" id="multipleUpload">
+
+
                         </div>
 
                     </div>

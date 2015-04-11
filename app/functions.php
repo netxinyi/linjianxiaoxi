@@ -306,3 +306,16 @@ if(! function_exists('date_to_age')){
         return $befor.$str.$after;
     }
 }
+
+if(! function_exists('img_url')){
+    function img_url($fileFullName,$size = '',$default = ''){
+        $fileInfo = explode('.', $fileFullName);
+        if($file = explode('#^_^#',base64_decode($fileInfo[0]))){
+            $targetFolder = date('Y-m',$file[1]);
+            $filePath =  '/uploads/'.$targetFolder.'/'.$fileInfo[0];
+            $filePath .= !empty($size) ? '_'.$size.'.'.$fileInfo[1] : '.'.$fileInfo[1];
+            return $filePath;
+        }
+        return $default;
+    }
+}

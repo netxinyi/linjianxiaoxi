@@ -1,13 +1,13 @@
 <?php
 /*
 Uploadify
-Copyright (c) 2012 Reactive Apps, Ronnie Garcia
-Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
+Copyright (c) 2015 Reactive Apps, Ronnie Garcia
+Released under the MIT License
+Author 迁迁
 */
 
 // Define a destination
 $targetFolder = '/uploads'; // Relative to the root
-
 if (!empty($_FILES)) {
 	$tempFile = $_FILES['Filedata']['tmp_name'];
 	$targetPath = $_SERVER['DOCUMENT_ROOT'] . $targetFolder;
@@ -18,7 +18,7 @@ if (!empty($_FILES)) {
 	$fileParts = pathinfo($_FILES['Filedata']['name']);
 	
 	if (in_array($fileParts['extension'],$fileTypes)) {
-		//move_uploaded_file($tempFile,$targetFile);
+		move_uploaded_file($tempFile,$targetFile);
 		echo '1';
 	} else {
 		echo 'Invalid file type.';

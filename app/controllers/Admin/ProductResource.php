@@ -187,5 +187,27 @@ class Admin_ProductResource extends BaseResource
         }
     }
 
+    /**
+     *
+     */
+    public function uploadImg(){
 
+        $root = base_path().'/public/uploads/'; // 上传目录
+        $createTime = time();
+        $targetFloder = $root.date('Y-m',$createTime).'/';
+
+        try{
+            $file = Input::file('Filedata');
+            if($file -> isValid()){
+                $fileName   =   $file->getClientOriginalName().'#^_^#'.$createTime.'#^_^#'.rand(0,999);
+                $fileName = base64_encode($fileName).'.'.$file->getClientOriginalExtension();
+                $file->move($targetFloder,$fileName);
+                return Response::json(array('data'=>array(
+                    'url'   =>  img_url($fileName)
+                ),'code'=>1000,'msg'=>'上传成功'));
+            }
+        }catch (Exception $error){
+            return Response::json(array('data'=>array(),'code'=>$error->getCode(),'msg'=>$error->getMessage()));
+        }
+    }
 }

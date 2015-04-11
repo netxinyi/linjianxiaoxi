@@ -36,7 +36,7 @@
 
                                     <div class="form-group input-group">
                                        {{ Form::label('account', '收款账号', ['class'=>'input-group-addon']) }}
-                                       {{ Form::text('account',Form::old('account'),['class'=>'form-control','placeholder'=>$account]) }}
+                                       {{ Form::text('account',Form::old('account',$account),['class'=>'form-control']) }}
                                    </div>
                                    <div class="form-group input-group">
                                        {{ Form::label('price', '价格', ['class'=>'input-group-addon']) }}
@@ -57,11 +57,11 @@
                                 </div>
                                 <div class="form-group input-group">
                                 {{ Form::label('cardNo', '银行卡号', ['class'=>'input-group-addon']) }}
-                                {{ Form::text('cardNo',Form::old('cardNo'),['class'=>'form-control','placeholder'=>$cardNo]) }}
+                                {{ Form::text('cardNo',Form::old('cardNo',$cardNo),['class'=>'form-control']) }}
                                 </div>
                                 <div class="form-group input-group">
                                 {{ Form::label('cardName', '开户人', ['class'=>'input-group-addon']) }}
-                                {{ Form::text('cardName',Form::old('cardName'),['class'=>'form-control','placeholder'=>$cardName]) }}
+                                {{ Form::text('cardName',Form::old('cardName',$cardName),['class'=>'form-control']) }}
                                 </div>
                               <div class="form-group input-group">
                                  {{ Form::label('price', '价格', ['class'=>'input-group-addon']) }}
@@ -74,7 +74,7 @@
                                  {{ Form::text('title',Form::old('title'),['class'=>'form-control','placeholder'=>'请输入收款说明']) }}
                              </div>
                                <br>
-                           </div  data-payment="alipay" data-payment="alipay">
+                           </div>
 
                        </div>
                            <br>

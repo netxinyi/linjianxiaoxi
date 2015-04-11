@@ -195,11 +195,11 @@ function docReady() {
         score: 4 //default stars
     });
 
-    //uploadify - multiple uploads
-    $('#file_upload').uploadify({
-        'swf': 'misc/uploadify.swf',
-        'uploader': 'misc/uploadify.php'
-        // Put your options here
+    $('#multipleUpload').uploadify({
+        'swf': '/assets/admin/misc/uploadify.swf',
+        'uploader': '/admin/product/uploadImg?_token='+$('meta[name="csrf-token"]').attr('content'),
+        'fileDesc':'请选择4M以下的jpg,png格式的图片',
+        'fileExt':'*.png,*.jpg'
     });
 
     //gallery controls container animation
