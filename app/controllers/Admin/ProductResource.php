@@ -100,6 +100,7 @@ class Admin_ProductResource extends BaseResource
      */
     public function store()
     {
+
         // 获取所有表单数据.
         $data = Input::all();
         // 创建验证规则
@@ -195,9 +196,9 @@ class Admin_ProductResource extends BaseResource
         $root = base_path().'/public/uploads/'; // 上传目录
         $createTime = time();
         $targetFloder = $root.date('Y-m',$createTime).'/';
-
         try{
-            $file = Input::file('Filedata');
+            $file = Input::file('file');
+
             if($file -> isValid()){
                 $fileName   =   $file->getClientOriginalName().'#^_^#'.$createTime.'#^_^#'.rand(0,999);
                 $fileName = base64_encode($fileName).'.'.$file->getClientOriginalExtension();

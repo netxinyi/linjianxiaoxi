@@ -145,8 +145,3 @@
     @parent
     <script type="text/javascript" src="/assets/admin/js/bootstrap-datetimepicker.min.js"></script>
 @stop
-
-@section('common_footer')
-    @parent
-
-@stop

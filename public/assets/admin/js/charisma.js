@@ -195,13 +195,6 @@ function docReady() {
         score: 4 //default stars
     });
 
-    $('#multipleUpload').uploadify({
-        'swf': '/assets/admin/misc/uploadify.swf',
-        'uploader': '/admin/product/uploadImg?_token='+$('meta[name="csrf-token"]').attr('content'),
-        'fileDesc':'请选择4M以下的jpg,png格式的图片',
-        'fileExt':'*.png,*.jpg'
-    });
-
     //gallery controls container animation
     $('ul.gallery li').hover(function () {
         $('img', this).fadeToggle(1000);

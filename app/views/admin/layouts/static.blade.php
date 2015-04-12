@@ -14,7 +14,6 @@
     <link href='/assets/admin/css/elfinder.min.css' rel='stylesheet'>
     <link href='/assets/admin/css/elfinder.theme.css' rel='stylesheet'>
     <link href='/assets/admin/css/jquery.iphone.toggle.css' rel='stylesheet'>
-    <link href='/assets/admin/css/uploadify.css' rel='stylesheet'>
     <link href='/assets/admin/css/animate.min.css' rel='stylesheet'>
 @stop
 @section('js_header')
@@ -55,11 +54,11 @@
 <script src="/assets/admin/js/jquery.iphone.toggle.js"></script>
 <!-- autogrowing textarea plugin -->
 <script src="/assets/admin/js/jquery.autogrow-textarea.js"></script>
-<!-- multiple file upload plugin -->
-<script src="/assets/admin/js/jquery.uploadify-3.1.min.js"></script>
 <!-- history.js for cross-browser state change on ajax -->
 <script src="/assets/admin/js/jquery.history.js"></script>
 <!-- application script for Charisma demo -->
 <script src="/assets/admin/js/charisma.js"></script>
+<script src="/assets/admin/js/webuploader.min.js"></script>
+<script src="/assets/admin/js/upload.js"></script>
 
 @stop

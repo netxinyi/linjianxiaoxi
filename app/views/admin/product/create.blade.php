@@ -3,8 +3,10 @@
 @section('title')
     添加鹦鹉
 @stop
-
-
+@section('css')
+@parent
+<link rel="stylesheet" href="/assets/admin/css/webuploader.css" />
+@stop
 @section('content')
 
     @breadCrumb(array('首页'=>'/','添加鹦鹉'=>route('product.create')))
@@ -32,7 +34,7 @@
                             <li><a href="#product-gallery">相册</a></li>
                      </ul>
                       <br>
-                    <div id="myTabContent" class="tab-content col-md-8">
+                    <div id="myTabContent" class="tab-content">
                        @include('admin.common.notice')
                         <div class="tab-pane active " id="product-baseinfo">
 
@@ -85,9 +87,23 @@
                             <br>
                         </div>
                         <div class="tab-pane" id="product-gallery">
-                         <input data-no-uniform="true" type="file" name="multipleUpload" id="multipleUpload">
-
-
+<div id="uploader" class="wu-example">
+    <div class="queueList">
+        <div id="dndArea" class="placeholder">
+            <div id="filePicker"></div>
+            <p>或将照片拖到这里，单次最多可选300张</p>
+        </div>
+    </div>
+    <div class="statusBar" style="display:none;">
+        <div class="progress">
+            <span class="text">0%</span>
+            <span class="percentage"></span>
+        </div><div class="info"></div>
+        <div class="btns">
+            <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+        </div>
+    </div>
+</div>
                         </div>
 
                     </div>
@@ -104,5 +120,9 @@
         <!--/span-->
 
     </div>
+
+@stop
+@section('js_footer')
+@parent
 
 @stop
