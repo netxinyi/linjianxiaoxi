@@ -58,7 +58,6 @@
 <script src="/assets/admin/js/jquery.history.js"></script>
 <!-- application script for Charisma demo -->
 <script src="/assets/admin/js/charisma.js"></script>
-<script src="/assets/admin/js/webuploader.min.js"></script>
-<script src="/assets/admin/js/upload.js"></script>
+
 
 @stop

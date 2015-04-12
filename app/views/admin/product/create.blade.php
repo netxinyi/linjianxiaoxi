@@ -5,7 +5,7 @@
 @stop
 @section('css')
 @parent
-<link rel="stylesheet" href="/assets/admin/css/webuploader.css" />
+<link rel="stylesheet" href="/assets/admin/css/webuploader.css">
 @stop
 @section('content')
 
@@ -87,23 +87,24 @@
                             <br>
                         </div>
                         <div class="tab-pane" id="product-gallery">
-<div id="uploader" class="wu-example">
-    <div class="queueList">
-        <div id="dndArea" class="placeholder">
-            <div id="filePicker"></div>
-            <p>或将照片拖到这里，单次最多可选300张</p>
-        </div>
-    </div>
-    <div class="statusBar" style="display:none;">
-        <div class="progress">
-            <span class="text">0%</span>
-            <span class="percentage"></span>
-        </div><div class="info"></div>
-        <div class="btns">
-            <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
-        </div>
-    </div>
-</div>
+
+                            <div id="uploader" class="wu-example">
+                                <div class="queueList">
+                                    <div id="dndArea" class="placeholder">
+                                        <div id="filePicker"></div>
+                                        <p>或将照片拖到这里，单次最多可选300张</p>
+                                    </div>
+                                </div>
+                                <div class="statusBar" style="display:none;">
+                                    <div class="progress">
+                                        <span class="text">0%</span>
+                                        <span class="percentage"></span>
+                                    </div><div class="info"></div>
+                                    <div class="btns">
+                                        <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -124,5 +125,6 @@
 @stop
 @section('js_footer')
 @parent
-
+<script src="/assets/admin/js/webuploader.min.js"></script>
+<script src="/assets/admin/js/upload.js"></script>
 @stop

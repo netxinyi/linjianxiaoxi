@@ -93,7 +93,7 @@ $(function() {
     // 当有文件添加进来时执行，负责view的创建
     function addFile( file ) {
         var $li = $( '<li id="' + file.id + '">' +
-                '<p class="title">' + file.name + '</p>' +
+
                 '<p class="imgWrap"></p>'+
                 '<p class="progress"><span></span></p>' +
                 '</li>' ),
@@ -147,13 +147,12 @@ $(function() {
             if ( prev === 'progress' ) {
                 $prgress.hide().width(0);
             } else if ( prev === 'queued' ) {
-                $li.off( 'mouseenter mouseleave' );
-                $btns.remove();
+                //$li.off( 'mouseenter mouseleave' );
+                //$btns.remove();
             }
 
             // 成功
             if ( cur === 'error' || cur === 'invalid' ) {
-                console.log( file.statusText );
                 showError( file.statusText );
                 percentages[ file.id ][ 1 ] = 1;
             } else if ( cur === 'interrupt' ) {
@@ -184,6 +183,7 @@ $(function() {
 
             switch ( index ) {
                 case 0:
+                    file.setStatus('cancelled ','文件被删除');
                     uploader.removeFile( file );
                     return;
 
@@ -259,7 +259,6 @@ $(function() {
 
     function updateStatus() {
         var text = '', stats;
-        console.log(state);
         if ( state === 'ready' ) {
             text = '选中' + fileCount + '张图片，共' +
                     WebUploader.formatSize( fileSize ) + '。';
@@ -306,7 +305,7 @@ $(function() {
 
             case 'ready':
                 $placeHolder.addClass( 'element-invisible' );
-                $( '#filePicker2' ).removeClass( 'element-invisible');
+                //$( '#filePicker2' ).removeClass( 'element-invisible');
                 $queue.parent().addClass('filled');
                 $queue.show();
                 $statusBar.removeClass('element-invisible');
@@ -314,7 +313,7 @@ $(function() {
                 break;
 
             case 'uploading':
-                $( '#filePicker2' ).addClass( 'element-invisible' );
+                //$( '#filePicker2' ).addClass( 'element-invisible' );
                 $progress.show();
                 $upload.text( '暂停上传' );
                 break;
@@ -326,7 +325,7 @@ $(function() {
 
             case 'confirm':
                 $progress.hide();
-                $upload.text( '开始上传' ).addClass( 'disabled' );
+                $upload.text( '开始上传' );
 
                 stats = uploader.getStats();
                 if ( stats.successNum && !stats.uploadFailNum ) {
@@ -383,9 +382,13 @@ $(function() {
         updateTotalProgress();
 
     };
-    uploader.uploadSuccess = function(file,response){
-        console.log(file);
-        console.log(response);
+    uploader.onUploadSuccess = function(file,response){
+        if(response.code == 1000){
+            var $li = $('#'+file.id);
+           // $li.find('.imgWrap img').attr('src',response.data.url);
+            $li.append('<input type="hidden" name="productImg[]" value="'+response.data.id+'">');
+        }
+
     }
     uploader.on( 'all', function( type ) {
         var stats;

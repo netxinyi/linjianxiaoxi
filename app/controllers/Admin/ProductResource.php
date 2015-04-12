@@ -204,7 +204,8 @@ class Admin_ProductResource extends BaseResource
                 $fileName = base64_encode($fileName).'.'.$file->getClientOriginalExtension();
                 $file->move($targetFloder,$fileName);
                 return Response::json(array('data'=>array(
-                    'url'   =>  img_url($fileName)
+                    'url'   =>  img_url($fileName),
+                    'id'    =>123
                 ),'code'=>1000,'msg'=>'上传成功'));
             }
         }catch (Exception $error){
