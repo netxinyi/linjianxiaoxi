@@ -217,7 +217,7 @@ class Admin_ProductResource extends BaseResource
                 $portrait->resize(300, 300)->save($savePath.$fileName.'_medium.'.$extension);
                 $portrait->resize(110, 110)->save($savePath.$fileName.'_small.'.$extension);
                 return Response::json(array('data'=>array(
-                    'fileName'  =>  $fileName,
+                    'fileName'  =>  $fileName.'.'.$extension,
                     'fileUrl'   =>  imgurl_by_path($savePath,$fileName.'.'.$extension),
                     'size'      =>  array(
                         'large' =>  imgurl_by_path($savePath,$fileName.'.'.$extension,'large'),

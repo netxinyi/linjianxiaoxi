@@ -387,7 +387,7 @@ $(function() {
             var $li = $('#'+file.id);
             $li.find('.imgWrap img').attr('src',response.data.size.small);
             var stats = uploader.getStats();
-            $li.append('<input type="hidden" name="productImg['+stats.successNum+'][fileName]" value="'+response.data.fileName+'">');
+            $li.append('<input type="hidden" name="productImg[][fileName]" value="'+response.data.fileName+'">');
         }
 
     }

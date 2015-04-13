@@ -87,7 +87,22 @@
                             <br>
                         </div>
                         <div class="tab-pane" id="product-gallery">
+                            @if(Input::old('productImg'))
+                                <h3>已上传的图片</h3>
+                                <ul class="thumbnails gallery">
 
+                                @foreach(Input::old('productImg') as $key=>$img)
+                                      <li id="image-{{$key}}" class="thumbnail">
+                                            <a title="" href="{{imgurl_by_name($img['fileName'])}}" style="background: url({{imgurl_by_name($img['fileName'],'small')}})">
+                                            <img src="{{imgurl_by_name($img['fileName'],'small')}}">
+
+                                            </a>
+                                            <input type="hidden" name="productImg[][fileName]" value="{{$img['fileName']}}"
+                                      </li>
+                                @endforeach
+                                </ul>
+
+                            @endif
                             <div id="uploader" class="wu-example">
                                 <div class="queueList">
                                     <div id="dndArea" class="placeholder">
