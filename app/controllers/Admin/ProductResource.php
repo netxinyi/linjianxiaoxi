@@ -110,7 +110,7 @@ class Admin_ProductResource extends BaseResource
             'code'       => 'required|alpha_dash|between:3,10|' . $unique,
             'varietieId' => 'required|min:1',
             'price'      => 'required|numeric',
-            'birthday'   => 'required|date_format:Y-m-d|before:今天'
+            'birthday'   => 'required|date_format:Y-m-d|before:today'
         );
         // 自定义验证消息
         // 开始验证
