@@ -77,6 +77,7 @@ class CreateProductTable extends Migration {
             $table->integer('productId');
             $table->string('title', 100);
             $table->string('path', 255);
+            $table->string('fileName', 255);
             $table->string('description');
             $table->timestamps();
 
