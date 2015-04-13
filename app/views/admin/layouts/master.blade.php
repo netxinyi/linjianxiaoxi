@@ -8,7 +8,6 @@
     <meta name="description" content="鹦鹉吧，中国最大的精品鹦鹉繁殖基地">
     <meta name="keywords" content="鹦鹉，鹦鹉吧，大头鹦鹉">
     <meta name="author" content="迁迁">
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
     @yield('meta_header')
     <!-- The fav icon -->
     <link rel="shortcut icon" href="/img/favicon.ico">

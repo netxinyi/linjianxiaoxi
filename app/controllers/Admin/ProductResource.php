@@ -202,18 +202,28 @@ class Admin_ProductResource extends BaseResource
      */
     public function uploadImg(){
 
-        $root = base_path().'/public/uploads/'; // 上传目录
         $createTime = time();
-        $targetFloder = $root.date('Y-m',$createTime).'/';
+        $savePath = public_path('uploads/images/'.date('Y-m',$createTime).'/');
         try{
             $file = Input::file('file');
             if($file -> isValid()){
                 $fileName   =   $file->getClientOriginalName().'#^_^#'.$createTime.'#^_^#'.rand(0,999);
-                $fileName = base64_encode($fileName).'.'.$file->getClientOriginalExtension();
-                $file->move($targetFloder,$fileName);
+                $fileName   = base64_encode($fileName);
+                $extension =$file->getClientOriginalExtension();
+                // 存储不同尺寸的图片
+                $portrait = Image::make($file->getRealPath());
+                $portrait->save($savePath.$fileName.'.'.$extension);
+                $portrait->resize(500, 500)->save($savePath.$fileName.'_large.'.$extension);
+                $portrait->resize(300, 300)->save($savePath.$fileName.'_medium.'.$extension);
+                $portrait->resize(110, 110)->save($savePath.$fileName.'_small.'.$extension);
                 return Response::json(array('data'=>array(
                     'fileName'  =>  $fileName,
-                    'url'   =>  img_url($fileName),
+                    'fileUrl'   =>  imgurl_by_path($savePath,$fileName.'.'.$extension),
+                    'size'      =>  array(
+                        'large' =>  imgurl_by_path($savePath,$fileName.'.'.$extension,'large'),
+                        'small' =>  imgurl_by_path($savePath,$fileName.'.'.$extension,'small'),
+                        'medium' =>  imgurl_by_path($savePath,$fileName.'.'.$extension,'medium'),
+                    )
                 ),'code'=>1000,
                     'msg'=>'上传成功'));
             }

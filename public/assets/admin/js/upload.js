@@ -78,7 +78,7 @@ $(function() {
         disableGlobalDnd: true,
 
         chunked: true,
-        server: '/admin/product/uploadImg?_token='+$('meta[name="csrf-token"]').attr('content'),
+        server: '/admin/product/uploadImg?_token='+$('input[name="_token"]:hidden').val(),
         fileNumLimit: 300,
         fileSizeLimit: 5 * 1024 * 1024,    // 200 M
         fileSingleSizeLimit: 1 * 1024 * 1024    // 50 M
@@ -385,7 +385,7 @@ $(function() {
     uploader.onUploadSuccess = function(file,response){
         if(response.code == 1000){
             var $li = $('#'+file.id);
-           // $li.find('.imgWrap img').attr('src',response.data.url);
+            $li.find('.imgWrap img').attr('src',response.data.size.small);
             var stats = uploader.getStats();
             $li.append('<input type="hidden" name="productImg['+stats.successNum+'][fileName]" value="'+response.data.fileName+'">');
         }

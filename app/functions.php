@@ -306,15 +306,26 @@ if(! function_exists('date_to_age')){
         return $befor.$str.$after;
     }
 }
-
-if(! function_exists('img_url')){
-    function img_url($fileFullName,$size = '',$default = ''){
+if(! function_exists('img_by_path')){
+    function imgurl_by_path($path,$fileFullName,$size = ''){
+        if(!$size){
+            $fileName = $fileFullName;
+        }else{
+            $fileInfo = explode('.', $fileFullName);
+            $fileName = $fileInfo[0].(!empty($size) ? '_'.$size.'.'.$fileInfo[1] : '.'.$fileInfo[1]);
+        }
+        $path = preg_replace('/(.*?\/?public)/','',$path);
+        $url = URL::to(trim($path,'/').'/'.$fileName);
+        return $url;
+    }
+}
+if(! function_exists('img_by_name')){
+    function imgurl_by_name($fileFullName,$size = '',$default = ''){
         $fileInfo = explode('.', $fileFullName);
         if($file = explode('#^_^#',base64_decode($fileInfo[0]))){
             $targetFolder = date('Y-m',$file[1]);
-            $filePath =  '/uploads/'.$targetFolder.'/'.$fileInfo[0];
-            $filePath .= !empty($size) ? '_'.$size.'.'.$fileInfo[1] : '.'.$fileInfo[1];
-            return $filePath;
+            $filePath =  public_path('uploads/images/'.$targetFolder,$fileFullName);
+            return img_by_path($filePath,$fileFullName,$size);
         }
         return $default;
     }
