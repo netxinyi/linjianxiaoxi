@@ -110,14 +110,12 @@ class Admin_ProductResource extends BaseResource
             'code'       => 'required|alpha_dash|between:3,10|' . $unique,
             'varietieId' => 'required|min:1',
             'price'      => 'required|numeric',
-            'birthday'   => 'required|date_format:Y-m-d'
+            'birthday'   => 'required|date_format:Y-m-d|before:今天'
         );
         // 自定义验证消息
         // 开始验证
         $validator = Validator::make($data, $rules, $this->validatorMessages);
         if ($validator->passes()) {
-            // 验证成功
-            // 添加资源
             $model               = $this->model;
             $model->title        = Input::get('title');
             $model->code         = Input::get('code');
@@ -130,15 +128,26 @@ class Admin_ProductResource extends BaseResource
             $model->implicitGene = Input::get('implicitGene');
             $model->description  = Input::get('description', '');
             $model->created_at   = new Carbon;
-            if ($model->save()) {
-                // 添加成功
-                return Redirect::back()
-                    ->with('success', '<strong>' . $this->resourceName . '添加成功：</strong>您可以继续添加新' . $this->resourceName . '，或返回' . HTML::link(route('product.index', $this->resourceName . '列表')));
-            } else {
+            try{
+                $model->beginTransaction();
+                if ($model->save()) {
+                   $productId = $model->getKey();
+                    $galleryModel = App::make('Gallery');
+                    $galleryModel->createProductImg(Input::get('productImg'),$productId);
+
+                    $model->commit();
+                    // 添加成功
+                    return Redirect::back()
+                        ->with('success', '<strong>' . $this->resourceName . '添加成功：</strong>您可以继续添加新' . $this->resourceName . '，或返回' . HTML::link(route('product.index', $this->resourceName . '列表')));
+                } else {
+
+                }
+            }catch (Exception $error){
+                $model->rollback();
                 // 添加失败
                 return Redirect::back()
                     ->withInput()
-                    ->with('error', '<strong>' . $this->resourceName . '添加失败。</strong>');
+                    ->with('error', '<strong>' . $this->resourceName . '添加失败。</strong>'.$error->getMessage());
             }
         } else {
             // 验证失败
@@ -198,15 +207,15 @@ class Admin_ProductResource extends BaseResource
         $targetFloder = $root.date('Y-m',$createTime).'/';
         try{
             $file = Input::file('file');
-
             if($file -> isValid()){
                 $fileName   =   $file->getClientOriginalName().'#^_^#'.$createTime.'#^_^#'.rand(0,999);
                 $fileName = base64_encode($fileName).'.'.$file->getClientOriginalExtension();
                 $file->move($targetFloder,$fileName);
                 return Response::json(array('data'=>array(
+                    'fileName'  =>  $fileName,
                     'url'   =>  img_url($fileName),
-                    'id'    =>123
-                ),'code'=>1000,'msg'=>'上传成功'));
+                ),'code'=>1000,
+                    'msg'=>'上传成功'));
             }
         }catch (Exception $error){
             return Response::json(array('data'=>array(),'code'=>$error->getCode(),'msg'=>$error->getMessage()));

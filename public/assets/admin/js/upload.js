@@ -386,7 +386,8 @@ $(function() {
         if(response.code == 1000){
             var $li = $('#'+file.id);
            // $li.find('.imgWrap img').attr('src',response.data.url);
-            $li.append('<input type="hidden" name="productImg[]" value="'+response.data.id+'">');
+            var stats = uploader.getStats();
+            $li.append('<input type="hidden" name="productImg['+stats.successNum+'][fileName]" value="'+response.data.fileName+'">');
         }
 
     }

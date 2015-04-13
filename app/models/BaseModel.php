@@ -32,6 +32,10 @@ class BaseModel extends Eloquent
      */
     protected $guarded = array();
 
+    public  $incrementing = true;
+
+    protected $primaryKey = 'id';
+
 /*
 |--------------------------------------------------------------------------
 | 访问器
@@ -64,5 +68,15 @@ class BaseModel extends Eloquent
         return friendly_date($this->deleted_at);
     }
 
+    public function beginTransaction(){
+        return DB::beginTransaction();
+    }
 
+    public function commit(){
+        return DB::commit();
+    }
+
+    public function rollback(){
+        return DB::rollback();
+    }
 }
